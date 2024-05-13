@@ -1,0 +1,119 @@
+/* Container and layout styles */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Audio player styling */
+.player {
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.rounded-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Playlist styles */
+.playlist {
+    background-color: #343a40;
+    border-top: 1px solid #000;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.playlist li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.playlist li a{
+    width: 100%;
+    color:#fff;
+    text-decoration: none;
+}
+
+.playlist li:hover, .playlist li.active {
+    background-color: #000;
+}
+
+.playlist li:last-child {
+    border-bottom: none;
+}
+
+/* Text styles */
+.track-name, .date-posted, .track-duration {
+    margin-right: 10px;
+}
+
+.track-name {
+    font-weight: bold;
+}
+
+.date-posted {
+    font-size: 0.85em;
+}
+
+.track-duration {
+    font-size: 0.85em;
+    float: right;
+}
+
+/* Bottom bar and buttons */
+.bottom-bar {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: right;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+    border-top: 1px solid #555;
+}
+
+.sort-button {
+    border-bottom-left-radius: 10px;
+    background-color: #343a40;
+    padding: 10px;
+    color: #ffffff;
+    float: left;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: 1px solid #333;
+}
+
+.sort-button:hover {
+    background-color: #495057;
+}
+
+a .iconify.iconify--mdi {
+    font-size: 1.3em;
+    margin-bottom: -4px;
+}
