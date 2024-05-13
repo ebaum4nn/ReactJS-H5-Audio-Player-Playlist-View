@@ -1,3 +1,10 @@
+# Installation
+`cd project_name`<br />
+`npm install react-h5-audio-player`
+
+
+Add these repo files in your `components` folder.
+
 ### Screenshot
 ![](./playlist.png)
 
